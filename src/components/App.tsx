@@ -1,4 +1,5 @@
-import React, { useCallback, useState } from "react";
+import * as React from "react";
+import { useCallback, useState } from "react";
 
 const App = () => {
   const [count, setCount] = useState<number>(0);

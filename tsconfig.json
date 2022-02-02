@@ -2,12 +2,17 @@
   "allowSyntheticDefaultImports": true,
   "esModuleInterop": true,
   "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "moduleResolution": "node",
     "outDir": "./dist",
     "target": "es5",
     "sourceMap": true,
     "module": "es6",
     "jsx": "react",
     "noImplicitAny": true,
-    "allowSyntheticDefaultImports": true
-  }
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src"]
 }
