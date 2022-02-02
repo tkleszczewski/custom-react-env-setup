@@ -37,7 +37,7 @@
   },
   "jest": {
     "setupFilesAfterEnv": [
-      "<rootDir>/jest-setup.ts"
+      "<rootDir>/testsSetup/jest-setup.ts"
     ],
     "transform": {
       "^.+\\.tsx?$": "ts-jest",
@@ -60,7 +60,8 @@
     "globals": {
       "ts-jest": {
         "useESM": true,
-        "tsconfig": "<rootDir>/tsconfig.json"
+        "tsconfig": "<rootDir>/testsSetup/tsconfig.test.json",
+        "babelConfig": true
       }
     },
     "moduleNameMapper": {
